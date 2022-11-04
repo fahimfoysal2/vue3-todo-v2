@@ -1,4 +1,4 @@
-# todo
+# Vue3 - ToDo App
 
 ## Project setup
 ```

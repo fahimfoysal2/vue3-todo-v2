@@ -1,16 +1,16 @@
 <template>
   <div class="form-field">
-    <h1 class="title">~ Today I need to ~</h1>
+    <h1 class="title">~ Things in my list ~</h1>
     <form @submit.prevent="handleAddTodo(contentRef)" class="form-wrapper">
       <div class="form-input">
         <input
           ref="inputRef"
-          placeholder="Add new todo..."
+          placeholder="I have to..."
           v-model.trim="contentRef"
           autofocus
         />
       </div>
-      <button type="submit" class="submit-btn"><span>Submit</span></button>
+      <button type="submit" class="submit-btn"><span>Add to list</span></button>
     </form>
   </div>
 </template>
@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .form-field {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .title {
@@ -94,10 +94,7 @@ export default {
   $transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   position: relative;
-
-  transform: rotate(4deg);
   border-radius: 6px;
-
   transition: $transition;
 
   &::before {

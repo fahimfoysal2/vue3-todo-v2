@@ -1,8 +1,8 @@
 <template>
   <header class="heading">
-    <div class="img-wrapper">
-      <img src="../assets/note.svg" alt="Note" />
-    </div>
+    <!--<div class="img-wrapper">
+          <img src="../assets/note.svg" alt="Note" />
+        </div>-->
     <div class="title">To-Do List</div>
   </header>
 </template>
@@ -31,7 +31,6 @@ export default {
   }
 
   .title {
-    transform: rotate(3deg);
     font-size: 21px;
     padding: 0.25em 0.8em 0.15em;
     border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;

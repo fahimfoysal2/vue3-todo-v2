@@ -24,7 +24,7 @@
   </ul>
   <div class="empty-todos" v-else-if="allTodos.length === 0">
     <font-awesome-icon icon="clipboard-check" class="icon" />
-    <span class="msg">Congrat, you have no more tasks to do</span>
+    <span class="msg">Cool! I can now watch some anime from my watch list...</span>
   </div>
 </template>
 
@@ -125,7 +125,7 @@ export default {
 }
 
 .todos-item.completed {
-  background-color: $primary-color;
+  background-color: $primary-color-light;
 
   animation: flipInX 0.75s ease-in-out both;
 
